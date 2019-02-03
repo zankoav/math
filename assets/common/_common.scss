@@ -1,0 +1,26 @@
+@import "fonts";
+// Add Swiper stiles
+// @import "./../../node_modules/swiper/dist/css/swiper.min.css";
+@import "reset";
+@import "constants";
+@include loader();
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 0 1rem;
+    position: relative;
+
+    @include sm {
+        padding: 0 2rem;
+    }
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        max-width: $MAX-WIDTH;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
