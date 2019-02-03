@@ -4,6 +4,9 @@ html
     +head()
     body(class="body_overflow_hidden")
         +loader('loader__spinner_egg')
-        h1 Hello world
-        +header()
-        +footer()
+        .app
+            +header()
+            .app__content
+                +lesson-menu()
+                +lesson()
+            +footer()

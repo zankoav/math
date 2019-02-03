@@ -1,0 +1,41 @@
+@import "./../../common/constants";
+
+.lesson {
+    width: 100%;
+    flex: 1 0 100%;
+    padding: 1rem;
+
+    @include sm{
+        width: initial;
+        flex: 1;
+        padding: 1rem 2rem;
+    }
+
+    &__header{
+        color: $GRAY_9;
+    }
+
+    &__title{
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__description{
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    &__button{
+        padding: .5rem 1rem;
+        background-color: $BLUE;
+        color: $WHITE;
+        margin: 1rem 0;
+        display: inline-block;
+    }
+
+    &__result{
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+}

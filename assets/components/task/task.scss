@@ -1,0 +1,40 @@
+@import "./../../common/constants";
+
+.task {
+    padding: .5rem 0;
+    max-width: 100%;
+
+    @include sm{
+        max-width: 240px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $GRAY_9;
+        background-color: $GRAY_E;
+    }
+
+    &__text {
+        width: 140px;
+        padding: .25rem;
+        color: $GRAY_6;
+    }
+
+    &__input {
+        width: 100px;
+        font-size: 16px;
+        padding: .25rem;
+        border: 1px solid $WHITE;
+    }
+
+    &__message {
+        font-size: 12px;
+        color: $GREEN;
+
+        &_error {
+            color: $RED;
+        }
+    }
+}

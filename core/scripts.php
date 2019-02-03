@@ -12,7 +12,7 @@
 
 			wp_enqueue_script( 'commons', Assets::getJs( 'common' ), false, null, true );
 
-			if ( is_page_template( 'template-lesson-1.php' ) ) {
+			if ( is_page_template( 'template-lesson.php' ) ) {
 				wp_enqueue_script( 'lesson_1', Assets::getJs( 'lesson_1' ), false, null, true );
 			}
 		} );

@@ -1,0 +1,35 @@
+@import "./../../common/constants";
+
+.lesson-menu {
+    width: 100%;
+    flex: 1 0 100%;
+    padding: 1rem;
+    background-color: $GRAY_E;
+
+    @include sm{
+        width: 240px;
+        flex: 0 0 240px;
+    }
+
+    &__item{
+        border-bottom: 1px solid $GRAY_A;
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        a{
+            display: block;
+            padding: 0.5rem 0;
+            font-size: 16px;
+            color: $BLUE;
+            transition: color .4s;
+        }
+
+        &_active, &:hover{
+            a{
+                color: $RED;
+            }
+        }
+    }
+}

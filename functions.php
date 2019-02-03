@@ -19,4 +19,5 @@
 	require_once __DIR__ . '/core/styles.php';
 	require_once __DIR__ . '/core/scripts.php';
 
-	require_once __DIR__ . '/core/cmb2/common.php';
+	//require_once __DIR__ . '/core/cmb2/common.php';
+	require_once __DIR__ . '/core/cmb2/lesson-template.php';
