@@ -7,8 +7,8 @@
     background-color: $GRAY_E;
 
     @include sm{
-        width: 240px;
-        flex: 0 0 240px;
+        width: 180px;
+        flex: 0 0 180px;
     }
 
     &__item{
@@ -20,8 +20,9 @@
 
         a{
             display: block;
-            padding: 0.5rem 0;
-            font-size: 16px;
+            text-transform: uppercase;
+            padding: 0.25rem 0;
+            font-size: 14px;
             color: $BLUE;
             transition: color .4s;
         }

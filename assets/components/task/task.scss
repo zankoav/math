@@ -5,7 +5,7 @@
     max-width: 100%;
 
     @include sm{
-        max-width: 240px;
+        max-width: 260px;
     }
 
     &__wrapper {
@@ -17,7 +17,6 @@
     }
 
     &__text {
-        width: 140px;
         padding: .25rem;
         color: $GRAY_6;
     }
